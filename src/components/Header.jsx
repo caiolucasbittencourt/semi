@@ -1,14 +1,20 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { navLinks } from "../data/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const navLinks = [
-    { href: "#specs", text: "Specs" },
-    { href: "#features", text: "Features" },
-    { href: "#interior", text: "Interior" },
-  ];
+  const handleAnchorClick = (e, href) => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: href } });
+    } else {
+      document.getElementById(href)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -30,7 +36,8 @@ export default function Header() {
                 {navLinks.map((link) => (
                   <a
                     key={link.text}
-                    href={link.href}
+                    href={`#${link.href}`}
+                    onClick={(e) => handleAnchorClick(e, link.href)}
                     className="text-sm font-medium text-gray-400 hover:text-white py-2 px-3 rounded-md transition-all duration-200"
                   >
                     {link.text}
@@ -102,8 +109,11 @@ export default function Header() {
           {navLinks.map((link) => (
             <a
               key={link.text}
-              href={link.href}
-              onClick={() => setIsMenuOpen(false)}
+              href={`#${link.href}`}
+              onClick={(e) => {
+                handleAnchorClick(e, link.href);
+                setIsMenuOpen(false);
+              }}
               className="text-gray-300 hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium"
             >
               {link.text}
