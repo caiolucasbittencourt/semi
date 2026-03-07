@@ -4,6 +4,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2306B6D4.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
 Projeto que une **design (UX/UI)** e **desenvolvimento front-end**. Uma proposta conceitual para o site do Tesla Semi, construída com **Tailwind CSS**.
 
@@ -21,7 +22,21 @@ Projeto que une **design (UX/UI)** e **desenvolvimento front-end**. Uma proposta
 - JavaScript
 - Vite
 - Tailwind CSS
-- HTML5 & CSS3
+- Framer Motion
+- React Router DOM
+
+## Estrutura de Pastas
+
+```
+src/
+├── components/     # Componentes reutilizáveis
+├── data/           # Dados estáticos (specs, features, navigation)
+├── pages/          # Páginas de rotas (Home, Login)
+├── assets/         # Imagens e recursos estáticos
+├── App.jsx         # Router principal
+├── main.jsx        # Entry point
+└── index.css       # Estilos globais
+```
 
 ## Instalação
 
@@ -30,3 +45,14 @@ git clone https://github.com/caiolucasbittencourt/tesla-semi
 cd tesla-semi
 npm install
 npm run dev
+```
+
+## Scripts Disponíveis
+
+| Script             | Descrição                             |
+| ------------------ | ------------------------------------- |
+| `npm run dev`      | Inicia o servidor de desenvolvimento  |
+| `npm run build`    | Gera build de produção                |
+| `npm run preview`  | Visualiza o build localmente          |
+| `npm run lint`     | Verifica erros de lint                |
+| `npm run lint:fix` | Corrige erros de lint automaticamente |
