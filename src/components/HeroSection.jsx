@@ -8,6 +8,7 @@ export default function HeroSection() {
           loop
           muted
           playsInline
+          preload="metadata"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/40"></div>

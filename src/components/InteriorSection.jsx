@@ -26,6 +26,7 @@ export default function InteriorSection() {
                 loop
                 muted
                 playsInline
+                preload="none"
                 className="w-full h-auto object-cover rounded-lg"
               />
             </FadeInSection>
