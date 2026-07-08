@@ -1,14 +1,14 @@
 {
-  "name": "tesla-semi",
+  "name": "semi",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Projeto conceitual do site Tesla Semi com React e Tailwind CSS",
+  "description": "SPA de front-end com composição de componentes, layout responsivo e organização por rotas.",
   "author": "Caio Lucas Bittencourt",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/caiolucasbittencourt/tesla-semi"
+    "url": "https://github.com/caiolucasbittencourt/semi"
   },
   "scripts": {
     "dev": "vite",

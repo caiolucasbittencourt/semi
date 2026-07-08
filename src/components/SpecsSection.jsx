@@ -11,7 +11,7 @@ export default function SpecsSection() {
               Performance and Efficiency
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto mt-4">
-              Tesla Semi is the safest, most comfortable truck ever, with the
+              Semi is the safest, most comfortable truck ever, with the
               lowest cost of ownership.
             </p>
           </FadeInSection>

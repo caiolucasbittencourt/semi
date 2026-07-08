@@ -1,4 +1,4 @@
-# Tesla Semi
+# Semi
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -6,15 +6,7 @@
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2306B6D4.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-Projeto que une **design (UX/UI)** e **desenvolvimento front-end**. Uma proposta conceitual para o site do Tesla Semi, construída com **Tailwind CSS**.
-
-## Funcionalidades
-
-- **Tema Escuro:** Interface com fundo preto, seguindo uma estética moderna e minimalista.
-- **Estrutura Baseada em Componentes:** O site foi dividido em componentes reutilizáveis (Header, Hero, Specs, etc.).
-- **Layout Responsivo:** Cabeçalho adaptável com menu mobile para uma experiência consistente em diferentes tamanhos de tela.
-- **Sistema de Rotas:** Navegação entre a página principal e a página de login sem recarregar a página, utilizando `react-router-dom`.
-- **Backgrounds Dinâmicos:** Uso de vídeos em loop como fundo nas seções principais para um maior impacto visual.
+SPA de front-end com composição de componentes, layout responsivo e organização por rotas.
 
 ## Tecnologias
 
@@ -24,6 +16,14 @@ Projeto que une **design (UX/UI)** e **desenvolvimento front-end**. Uma proposta
 - Tailwind CSS
 - Framer Motion
 - React Router DOM
+
+## Funcionalidades
+
+- **Tema Escuro:** Interface com fundo preto, seguindo uma estética moderna e minimalista.
+- **Estrutura Baseada em Componentes:** O site foi dividido em componentes reutilizáveis (Header, Hero, Specs, etc.).
+- **Layout Responsivo:** Cabeçalho adaptável com menu mobile para uma experiência consistente em diferentes tamanhos de tela.
+- **Sistema de Rotas:** Navegação entre a página principal e a página de login sem recarregar a página, utilizando `react-router-dom`.
+- **Backgrounds Dinâmicos:** Uso de vídeos em loop como fundo nas seções principais para um maior impacto visual.
 
 ## Estrutura de Pastas
 
@@ -41,8 +41,8 @@ src/
 ## Instalação
 
 ```bash
-git clone https://github.com/caiolucasbittencourt/tesla-semi
-cd tesla-semi
+git clone https://github.com/caiolucasbittencourt/semi
+cd semi
 npm install
 npm run dev
 ```
@@ -56,3 +56,7 @@ npm run dev
 | `npm run preview`  | Visualiza o build localmente          |
 | `npm run lint`     | Verifica erros de lint                |
 | `npm run lint:fix` | Corrige erros de lint automaticamente |
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.

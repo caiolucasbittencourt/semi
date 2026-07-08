@@ -5,7 +5,7 @@ export default function Footer() {
         <ul className="flex justify-center space-x-6 text-gray-700">
           <li>
             <a href="#" className="hover:text-white transition-colors">
-              Tesla © 2025
+              Semi © 2025
             </a>
           </li>
           <li>
